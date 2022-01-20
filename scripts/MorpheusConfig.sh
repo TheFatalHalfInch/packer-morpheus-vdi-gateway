@@ -28,7 +28,7 @@ done
 #open the file defined earlier, find the line with the string you are
 #looking for, and replace it with the string you are looking for and
 #'https://(the ip address we found)'
-sed -i "s/$find \'https:\/\/.*/$find \'https:\/\/$ip\'/" "$file"
+sed -i "s/$find 'https:\/\/.*/$find \'https:\/\/$ip\'/" "$file"
 
 #reconfigure morpheus now that the ip address has been changed in the file
 morpheus-ctl reconfigure
