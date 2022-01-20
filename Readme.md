@@ -9,6 +9,16 @@ This is a Packer template which can be used to deploy a vSphere template for a U
 - A vSphere environment
 - A Morpheus Hub account (https://morpheushub.com/login/auth)
 
+## NOTES
+
+Default Username: ubuntu
+Default Password: ubuntu  
+
+Running the template will sit for a long time (default is 20 minutes) at "Typing boot command...", this is by Design!
+SSH is available during the installation phase of the OS, and Packer will spam the connection until it maxes out the SSH retries which will in turn cause the template to fail.
+This will occur everytime unless a wait time is set to allow the OS to finish installing and reboot.
+(The variable ssh_wait can be altered if your OS finishes installing well under 20 minutes)
+
 ## How to use this template
 
 - Clone the repo
