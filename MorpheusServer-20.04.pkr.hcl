@@ -167,6 +167,11 @@ build {
 
   provisioner "shell" {
     execute_command   = "echo '${var.ssh_password}' | {{ .Vars }} sudo -E -S bash '{{ .Path }}'"
+    inline = ["chmod +x /home/${var.os_user}/MorpheusConfig.sh"]
+  }
+
+  provisioner "shell" {
+    execute_command   = "echo '${var.ssh_password}' | {{ .Vars }} sudo -E -S bash '{{ .Path }}'"
     script = "${path.root}/scripts/config.sh"
   }
 }
