@@ -25,4 +25,4 @@ dpkg -i "$tempdir/$morpheus"
 morpheus-ctl reconfigure
 
 #morpheus status
-morhpeus-ctl status
+morpheus-ctl status
