@@ -28,4 +28,4 @@ morpheus-ctl reconfigure
 morpheus-ctl status
 
 #remove temp directory
-rm -R "${tempdir}/
+rm -R "${tempdir}"
