@@ -21,7 +21,7 @@ packer build --var-file="c:\path\to\your\pkrvars.hcl" -var "vsphere_password=you
 
 ## AFTER DEPLOYMENT
 
-You will need to do the following after deploying the VM from the template to ensure Morpheus will work properly:
+You will need to do the following after deploying the VM from the template to ensure Morpheus will work properly:  
 - Configure a static ip address
 - Configure a DNS entry either in your local computer or router (if it supports DNS entries)
 - Run the MorpheusConfig.sh script as sudo
