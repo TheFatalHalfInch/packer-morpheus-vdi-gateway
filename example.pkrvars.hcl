@@ -14,11 +14,7 @@ vcenter_password = ""
 #this is used if you still have a self-signed cert through vsphere
 insecure_connection = true
 
-#vm setup during provisioning process
-cpus = 4
-cpu_cores = 4
-memory = 1024
-disk_size = 10000
+#converts the VM into a template
 convert_template = true
 
 #i have a relatively slow internet connection which caused long wait times for security updates
