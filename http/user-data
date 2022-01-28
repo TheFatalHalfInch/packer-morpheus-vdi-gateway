@@ -8,7 +8,7 @@ autoinstall:
       uri: http://us.archive.ubuntu.com/ubuntu
     - arches: [default]
       uri: http://ports.ubuntu.com/ubuntu-ports
-  identity: {hostname: morpheus, password: $6$rounds=4096$8dkK1P/oE$2DGKKt0wLlTVJ7USY.0jN9du8FetmEr51yjPyeiR.zKE3DGFcitNL/nF1l62BLJNR87lQZixObuXYny.Mf17K1,
+  identity: {hostname: morphgate, password: $6$rounds=4096$8dkK1P/oE$2DGKKt0wLlTVJ7USY.0jN9du8FetmEr51yjPyeiR.zKE3DGFcitNL/nF1l62BLJNR87lQZixObuXYny.Mf17K1,
     realname: ubuntu, username: ubuntu}
   keyboard: {layout: us, toggle: null, variant: ''}
   locale: en_US
