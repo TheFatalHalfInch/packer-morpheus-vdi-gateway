@@ -3,7 +3,7 @@
 tempdir="$(mktemp -d)"
 
 #filename
-morpheus="morpheus-appliance_5.4.2-2_amd64.deb"
+morpheus="morpheus-worker_5.3.4-1_amd64.deb"
 
 #install open-vm-tools
 apt-get -y install open-vm-tools
@@ -22,10 +22,10 @@ wget https://downloads.morpheusdata.com/files/"$morpheus" -P "$tempdir"
 dpkg -i "$tempdir/$morpheus"
 
 #reconfigure morpheus after the installation
-morpheus-ctl reconfigure
+morpheus-worker-ctl reconfigure
 
 #morpheus status
-morpheus-ctl status
+morpheus-worker-ctl status
 
 #remove temp directory
 rm -R "${tempdir}"
