@@ -53,7 +53,7 @@ variable "iso_paths" {
 //vm specs
 variable "name" {
   type    = string
-  default = "MorpheusServer-20.04"
+  default = "MorpheusVDIGateway-20.04"
 }
 variable "cpus" {
   type    = number
@@ -65,11 +65,11 @@ variable "cpu_cores" {
 }
 variable "memory" {
   type    = number
-  default = 8192
+  default = 4096
 }
 variable "disk_size" {
   type    = number
-  default = 210000
+  default = 20000
 }
 
 //other vars
